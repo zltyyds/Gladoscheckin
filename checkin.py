@@ -9,7 +9,7 @@ from pypushdeer import PushDeer
 # -------------------------------------------------------------------------------------------
 if __name__ == '__main__':
     # pushdeer key 申请地址 https://www.pushdeer.com/product.html
-    sckey = os.environ.get("SENDKEY", "")
+    # sckey = os.environ.get("SENDKEY", "")
 
     # 推送内容
     title = ""
@@ -84,7 +84,8 @@ if __name__ == '__main__':
     else:
         # 推送内容 
         title = f'# 未找到 cookies!'
-
+    print(title)
+    print(context)
     # 推送消息
-    pushdeer = PushDeer(pushkey=sckey) 
-    pushdeer.send_text(title, desp=context)
+    # pushdeer = PushDeer(pushkey=sckey) 
+    # pushdeer.send_text(title, desp=context)
