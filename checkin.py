@@ -1,6 +1,8 @@
 import requests
 import json
 import os
+import time
+import random
 
 from pypushdeer import PushDeer
 
@@ -8,6 +10,8 @@ from pypushdeer import PushDeer
 # github workflows
 # -------------------------------------------------------------------------------------------
 if __name__ == '__main__':
+    sleepTime = random.randint(1,300)
+    time.sleep(sleepTime)
     # pushdeer key 申请地址 https://www.pushdeer.com/product.html
     # sckey = os.environ.get("SENDKEY", "")
 
